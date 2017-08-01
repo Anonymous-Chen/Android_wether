@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AC_weather</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="wi">当前天气</string>
+    <string name="tp">出行计划</string>
+    <string name="cr">日历提醒</string>
+    
+    <string-array name="spingarr">
+     <item>北京</item>  
+    <item>上海</item>  
+    <item>广州</item>  
+    <item>深圳</item>  
+    </string-array>
+
+</resources>

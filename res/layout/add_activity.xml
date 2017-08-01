@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   
+    android:id="@+id/LinearLayout01"      
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"      
+    android:orientation="vertical"      
+    xmlns:android="http://schemas.android.com/apk/res/android"> 
+         
+        <LinearLayout
+            android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:orientation="horizontal"       
+                >
+                
+                 <EditText   
+            android:id="@+id/et_date"           
+            android:layout_width="0dp"          
+            android:layout_height="match_parent" 
+            android:layout_weight="1"          
+            android:inputType="none"          
+            android:cursorVisible="false" /> 
+            <EditText   
+            android:id="@+id/et_time"           
+            android:layout_width="0dp"          
+            android:layout_height="match_parent" 
+            android:layout_weight="1"          
+            android:inputType="none"          
+            android:cursorVisible="false" /> 
+            </LinearLayout> 
+ 
+            <LinearLayout
+            android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:orientation="horizontal"       
+                >
+                
+                <Button
+                    android:id="@+id/dateBtn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="设置日期" 
+                     style="?android:attr/buttonBarButtonStyle"/>
+          
+        <Button   
+            android:text="设置时间"           
+            android:id="@+id/timeBtn"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"/>
+        
+            </LinearLayout>     
+          
+        
+        
+            <EditText
+    android:id="@+id/et_at"
+    android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+    android:enabled="true"
+    android:gravity="top"
+    android:inputType="textMultiLine"
+    android:scrollbars="vertical" 
+    android:background="@android:drawable/edit_text"
+    android:text="活动概述"
+    ></EditText>
+         <EditText
+    android:id="@+id/et_ac"
+    android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="3" 
+    android:enabled="true"
+    android:gravity="top"
+    android:inputType="textMultiLine"
+    android:minLines="8"
+    android:maxLines="10"
+    android:scrollbars="vertical" 
+    android:text="活动详情"
+    android:background="@android:drawable/edit_text"
+    >
+</EditText>
+<LinearLayout
+            android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:orientation="horizontal"       
+                >
+        <Button   
+            android:text="返回"           
+            android:id="@+id/b_back"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+             /> 
+                
+        <Button   
+            android:text="保存"           
+            android:id="@+id/b_save"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+             />      
+          
+        <Button   
+            android:text="重置"           
+            android:id="@+id/b_reset"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+  
+</LinearLayout>  

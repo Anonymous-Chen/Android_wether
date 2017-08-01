@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   
+    android:id="@+id/LinearLayout01"      
+    android:layout_width="fill_parent"   
+    android:layout_height="fill_parent"      
+    android:orientation="vertical"      
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/b_back"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            style="?android:attr/buttonBarButtonStyle"
+            android:text="返回" />
+    </RelativeLayout>
+    
+        
+        <LinearLayout
+            android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:orientation="horizontal"       
+                >
+                
+                 <TextView
+    android:id="@+id/tv_date"
+    android:layout_width="0dp"          
+            android:layout_height="match_parent" 
+            android:layout_weight="1" 
+    android:enabled="true"
+    android:gravity="top"
+    android:scrollbars="vertical" 
+    android:background="@android:drawable/edit_text"
+    android:inputType="none" 
+    android:text="活动概述"/>
+                 <TextView
+    android:id="@+id/tv_time"
+    android:layout_width="0dp"          
+            android:layout_height="match_parent" 
+            android:layout_weight="1" 
+    android:enabled="true"
+    android:gravity="top"
+    android:scrollbars="vertical" 
+    android:background="@android:drawable/edit_text"
+    android:inputType="none" 
+    android:text="活动概述"/>
+            </LinearLayout> 
+ 
+                 
+          
+        
+        
+            <TextView
+    android:id="@+id/tv_at"
+    android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+    android:enabled="true"
+    android:gravity="top"
+    android:scrollbars="vertical" 
+    android:background="@android:drawable/edit_text"
+    android:inputType="none" 
+    android:text="活动概述"/>
+         <TextView
+    android:id="@+id/tv_ac"
+    android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="3" 
+    android:enabled="true"
+    android:gravity="top"
+    
+    android:minLines="8"
+    android:maxLines="10"
+    android:scrollbars="vertical"
+    android:inputType="none"  
+    android:text="活动详情"
+    android:background="@android:drawable/edit_text"
+    />
+
+<LinearLayout
+            android:layout_width="match_parent"          
+            android:layout_height="0dp" 
+            android:layout_weight="1" 
+            android:orientation="horizontal"       
+                >
+        
+                
+        <Button   
+            android:text="更新"           
+            android:id="@+id/b_update"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"
+             />      
+          
+        <Button   
+            android:text="删除"           
+            android:id="@+id/b_delete"          
+            android:layout_width="0dp"          
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            style="?android:attr/buttonBarButtonStyle"/>
+            </LinearLayout>
+  
+</LinearLayout>  

@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_blue" >
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:orientation="horizontal" 
+    	android:layout_weight="20"
+    >
+    <TextView 
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        
+        />
+        
+    <Spinner 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:id="@+id/s_province"
+    android:entries="@array/spingarr"
+    android:textSize="12sp"
+    android:layout_weight="2"
+    />
+    <Spinner 
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:id="@+id/s_city"
+    android:entries="@array/spingarr"
+    android:layout_weight="2"
+    
+    />
+    <RelativeLayout
+        android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+         >
+
+        <Button
+            android:id="@+id/b_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ib_share"
+            android:layout_margin="10dp"/>
+        
+    </RelativeLayout>
+    
+    </LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+		android:layout_height="0dp" 
+		android:layout_weight="55"
+        >
+
+        <ImageView
+            android:id="@+id/iv_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/p1" />
+
+         <TextView
+             android:id="@+id/tv_ntxet"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:text="24℃" 
+             android:textSize="50sp"
+             android:textColor="#FFFFFF" />
+        
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+		android:layout_height="0dp" 
+		android:layout_weight="25"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+         
+         <LinearLayout
+        android:layout_width="0dp"
+		android:layout_height="match_parent" 
+		android:layout_weight="1"
+        android:orientation="vertical">
+        	<TextView 
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="1"
+				android:gravity="center"
+				 android:text="天气"
+				 android:textSize="20sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+        	<TextView 
+        	    android:id="@+id/tv_nt"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="2"
+				android:gravity="center"
+				 android:text="晴" 
+				 android:textSize="30sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+
+            
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+		android:layout_height="match_parent" 
+		android:layout_weight="1"
+        android:orientation="vertical">
+        	<TextView 
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="1"
+				android:gravity="center"
+				 android:text="风向"
+				 android:textSize="20sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+        	<TextView 
+        	    android:id="@+id/tv_nw"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="2"
+				android:gravity="center"
+				 android:text="东南" 
+				 android:textSize="30sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+
+            
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+		android:layout_height="match_parent" 
+		android:layout_weight="1"
+        android:orientation="vertical">
+        	<TextView 
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="1"
+				android:gravity="center"
+				 android:text="紫外线" 
+				 android:textSize="20sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+        	<TextView 
+        	    android:id="@+id/tv_ss"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="2"
+				android:gravity="center"
+				 android:text="弱" 
+				 android:textSize="30sp" 
+				 android:textColor="#FFFFFF"
+        	    />
+
+            
+        
+    </LinearLayout>
+        
+    </LinearLayout>
+    <ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:fillViewport="false"
+    android:layout_weight="60">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        	
+    <TextView
+        	    android:layout_width="match_parent"
+        	    android:layout_height="40dp"
+        	    android:layout_weight="20"
+        	    android:gravity="center"
+        	    android:paddingBottom="5dp"
+        	    android:text="近三天天气情况"
+        	    android:textColor="#696969"
+        	    android:textSize="30sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp" >
+
+    <TextView 
+        	    android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="20"
+				android:gravity="center"
+				 android:text="今天" 
+				 android:textSize="25sp" 
+				 android:textColor="#696969"
+        	    />
+    <ImageView
+        android:id="@+id/iv_a"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            
+            android:src="@drawable/p1" />
+    
+    
+
+        <TextView
+            android:id="@+id/tv_a1"
+            android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="35"
+            
+            android:gravity="center"
+            android:text="晴转多云"
+            android:textSize="25sp" 
+            android:textColor="#696969"/>
+
+        <TextView
+            android:id="@+id/tv_a2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="29/37℃"
+            android:textColor="#696969"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+    <TextView 
+        	    android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="20"
+				android:gravity="center"
+				 android:text="明天" 
+				 android:textSize="25sp" 
+				 android:textColor="#696969"
+        	    />
+    <ImageView
+        android:id="@+id/iv_b"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            
+            android:src="@drawable/p1" />
+    
+    
+
+        <TextView
+            android:id="@+id/tv_b1"
+            android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="35"
+            
+            android:gravity="center"
+            android:text="晴转多云"
+            android:textSize="25sp" 
+            android:textColor="#696969"/>
+
+        <TextView
+            android:id="@+id/tv_b2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="29/37℃"
+            android:textColor="#696969"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp" >
+
+    <TextView 
+        	    android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="20"
+				android:gravity="center"
+				 android:text="后天" 
+				 android:textSize="25sp" 
+				 android:textColor="#696969"
+        	    />
+    <ImageView
+        android:id="@+id/iv_c"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="10"
+            
+            android:src="@drawable/p1" />
+    
+    
+
+        <TextView
+            android:id="@+id/tv_c1"
+            android:layout_width="0dp"
+				android:layout_height="30dp" 
+				android:layout_weight="35"
+            
+            android:gravity="center"
+            android:text="晴转多云"
+            android:textSize="25sp" 
+            android:textColor="#696969"/>
+
+        <TextView
+            android:id="@+id/tv_c2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="35"
+            android:gravity="center"
+            android:text="29/37℃"
+            android:textColor="#696969"
+            android:textSize="25sp" />
+        
+    </LinearLayout>
+    
+    <TextView
+        	    android:layout_width="match_parent"
+        	    android:layout_height="40dp"
+        	    android:layout_weight="20"
+        	    android:gravity="center"
+        	    android:paddingBottom="5dp"
+        	    android:text="今日出行建议"
+        	    android:textColor="#696969"
+        	    android:textSize="30sp" />
+    
+
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_d1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="穿衣：较冷" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_d2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="建议着厚外套加毛衣等服装。年老体弱者宜着大衣、呢外套加羊毛衫。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+
+        	<LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_u1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="紫外线:最弱" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_u2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+    <LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_cw1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="紫外线:最弱" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_cw2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+    <LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_t1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="紫外线:最弱" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_t2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+    <LinearLayout
+        
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_f1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="紫外线:最弱" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_f2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+    <LinearLayout
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="20"
+        	    android:background="#FFFFFF"
+        	    android:orientation="vertical"
+        	    android:paddingBottom="5dp"
+        	    android:paddingLeft="10dp"
+        	    android:paddingRight="10dp" >
+
+    	<TextView 
+    	    android:id="@+id/tv_s1"
+        	    android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="20"
+				 android:text="紫外线:最弱" 
+				 android:textSize="20sp" 
+				 android:textColor="#696969"
+        	    />    
+
+        <TextView
+            android:id="@+id/tv_s2"
+            android:layout_width="match_parent"
+				android:layout_height="0dp" 
+				android:layout_weight="35"
+            
+            android:text="属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+            android:textSize="15sp" 
+            android:textColor="#696969"/>
+
+        
+    </LinearLayout>
+        
+    </LinearLayout>
+ 
+    
+    
+        
+        
+    </ScrollView>
+    
+
+</LinearLayout>

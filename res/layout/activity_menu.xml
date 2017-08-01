@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal" 
+ >
+<Button
+    android:id="@+id/b_wi"
+    android:layout_width="0dp"
+android:layout_height="match_parent"
+android:text="@string/wi"
+ android:clickable="true"
+ android:layout_weight="1"
+ android:textSize="15sp"
+ style="?android:attr/borderlessButtonStyle" />
+<Button
+    android:id="@+id/b_tp"
+    android:layout_width="0dp"
+android:layout_height="match_parent"
+android:text="@string/tp"
+ android:clickable="true"
+ android:layout_weight="1"
+ android:textSize="15sp"
+ style="?android:attr/borderlessButtonStyle" />
+<Button
+    android:id="@+id/b_cr"
+    android:layout_width="0dp"
+android:layout_height="match_parent"
+android:text="@string/cr"
+ android:clickable="true"
+ android:layout_weight="1"
+ android:textSize="15sp"
+ style="?android:attr/borderlessButtonStyle" />
+
+
+</LinearLayout>
